@@ -189,14 +189,24 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="Yg1-wV-Qt3">
+                                <rect key="frame" x="316" y="252" width="30" height="30"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="XYJ-Es-SNc">
+                                <rect key="frame" x="317" y="303" width="30" height="30"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Yg1-wV-Qt3" firstAttribute="trailing" secondItem="HQ6-oZ-4rg" secondAttribute="trailing" id="0gr-Jg-rDR"/>
                             <constraint firstAttribute="bottom" secondItem="Xnj-eq-5Lt" secondAttribute="bottom" id="30H-bQ-slg"/>
                             <constraint firstItem="Xnj-eq-5Lt" firstAttribute="top" secondItem="fZW-dL-UC7" secondAttribute="top" id="6PL-p0-ARy"/>
+                            <constraint firstItem="XYJ-Es-SNc" firstAttribute="trailing" secondItem="T13-9c-Yg1" secondAttribute="trailing" id="7mk-E6-lKc"/>
                             <constraint firstItem="Xnj-eq-5Lt" firstAttribute="trailing" secondItem="fZW-dL-UC7" secondAttribute="trailing" id="Nyb-MA-YUT"/>
                             <constraint firstItem="Tuw-qa-Qym" firstAttribute="top" secondItem="fZW-dL-UC7" secondAttribute="top" constant="20" id="SH9-NZ-fkG"/>
+                            <constraint firstItem="XYJ-Es-SNc" firstAttribute="centerY" secondItem="T13-9c-Yg1" secondAttribute="centerY" id="YTa-bc-J48"/>
                             <constraint firstItem="Xnj-eq-5Lt" firstAttribute="leading" secondItem="fZW-dL-UC7" secondAttribute="leading" id="aak-rk-XGR"/>
+                            <constraint firstItem="Yg1-wV-Qt3" firstAttribute="centerY" secondItem="HQ6-oZ-4rg" secondAttribute="centerY" id="b2x-hB-SM3"/>
                             <constraint firstItem="fZW-dL-UC7" firstAttribute="trailing" secondItem="Tuw-qa-Qym" secondAttribute="trailing" constant="20" id="mN3-LV-kZq"/>
                             <constraint firstItem="Tuw-qa-Qym" firstAttribute="leading" secondItem="fZW-dL-UC7" secondAttribute="leading" constant="20" id="sZZ-qG-Wx1"/>
                         </constraints>
@@ -229,5 +239,6 @@
     <resources>
         <image name="bg_left1" width="1949" height="3441"/>
         <image name="bg_right1" width="1958" height="3446"/>
+        <image name="red_check" width="40" height="40"/>
     </resources>
 </document>
