@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>319555277222-ha3snqq0ouptvnsm33pmndtambqcuo1f.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.319555277222-ha3snqq0ouptvnsm33pmndtambqcuo1f</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCAk5uyYcFAglA7esFAKryRckK-iOJbGYQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>319555277222</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Mohsen.Abdl.LoginRegisterApp</string>
+	<key>PROJECT_ID</key>
+	<string>loginregisterapp-415fd</string>
+	<key>STORAGE_BUCKET</key>
+	<string>loginregisterapp-415fd.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:319555277222:ios:2d0ecdd31858a6f9</string>
+	<key>DATABASE_URL</key>
+	<string>https://loginregisterapp-415fd.firebaseio.com</string>
+</dict>
+</plist>

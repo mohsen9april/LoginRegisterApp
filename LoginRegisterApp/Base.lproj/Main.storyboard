@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginRegisterApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="LoginRegisterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,10 +121,10 @@
             </objects>
             <point key="canvasLocation" x="1072.8" y="133.00492610837438"/>
         </scene>
-        <!--View Controller-->
+        <!--RegisterVC-->
         <scene sceneID="ZrA-Ak-FDH">
             <objects>
-                <viewController id="qo8-w3-PeZ" sceneMemberID="viewController">
+                <viewController id="qo8-w3-PeZ" customClass="RegisterVC" customModule="LoginRegisterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TDY-bZ-fP5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,6 +186,9 @@
                                         <state key="normal" title="Register">
                                             <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerClicked:" destination="qo8-w3-PeZ" eventType="touchUpInside" id="vrk-BY-zFD"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -195,6 +198,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="XYJ-Es-SNc">
                                 <rect key="frame" x="317" y="303" width="30" height="30"/>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="uWg-qh-eGK">
+                                <rect key="frame" x="169" y="410.33333333333331" width="37" height="37"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -203,6 +210,8 @@
                             <constraint firstItem="Xnj-eq-5Lt" firstAttribute="top" secondItem="fZW-dL-UC7" secondAttribute="top" id="6PL-p0-ARy"/>
                             <constraint firstItem="XYJ-Es-SNc" firstAttribute="trailing" secondItem="T13-9c-Yg1" secondAttribute="trailing" id="7mk-E6-lKc"/>
                             <constraint firstItem="Xnj-eq-5Lt" firstAttribute="trailing" secondItem="fZW-dL-UC7" secondAttribute="trailing" id="Nyb-MA-YUT"/>
+                            <constraint firstItem="uWg-qh-eGK" firstAttribute="centerX" secondItem="JhB-Yb-bzi" secondAttribute="centerX" id="PQy-SK-Td1"/>
+                            <constraint firstItem="uWg-qh-eGK" firstAttribute="top" secondItem="Tuw-qa-Qym" secondAttribute="bottom" constant="20" id="RRT-Rd-y3r"/>
                             <constraint firstItem="Tuw-qa-Qym" firstAttribute="top" secondItem="fZW-dL-UC7" secondAttribute="top" constant="20" id="SH9-NZ-fkG"/>
                             <constraint firstItem="XYJ-Es-SNc" firstAttribute="centerY" secondItem="T13-9c-Yg1" secondAttribute="centerY" id="YTa-bc-J48"/>
                             <constraint firstItem="Xnj-eq-5Lt" firstAttribute="leading" secondItem="fZW-dL-UC7" secondAttribute="leading" id="aak-rk-XGR"/>
@@ -212,6 +221,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fZW-dL-UC7"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="uWg-qh-eGK" id="E2K-8X-DYd"/>
+                        <outlet property="confirmPassTxt" destination="T13-9c-Yg1" id="vvq-oc-loj"/>
+                        <outlet property="emailTxt" destination="DZF-Mf-xww" id="xuo-eQ-YCn"/>
+                        <outlet property="passwordTxt" destination="HQ6-oZ-4rg" id="6dN-Xb-a44"/>
+                        <outlet property="usernameTxt" destination="NA6-Wy-HpG" id="WDR-Xh-qwY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uH-Yv-NUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
