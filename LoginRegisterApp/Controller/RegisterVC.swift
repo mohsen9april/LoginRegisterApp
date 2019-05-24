@@ -32,11 +32,21 @@ class RegisterVC: UIViewController {
     
     
     @objc func textFiledDidchange( _ textField: UITextField) {
+        
+        
+        guard let passText = passwordTxt.text else { return }
+
+        
         // if we have started typing confirm passwrod text field
         if textField == confirmPassTxt {
             passCheckImage.isHidden = false
             confirmCheckImage.isHidden = false
-            
+        } else {
+            if passText.isEmpty {
+                passCheckImage.isHidden = true
+                confirmCheckImage.isHidden = true
+                confirmPassTxt.text = ""
+            }
         }
         
         // make it so when the passwords match, the checkmarks turn green
