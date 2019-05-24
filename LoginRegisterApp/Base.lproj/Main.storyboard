@@ -46,7 +46,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vq-aS-kde">
                                         <rect key="frame" x="0.0" y="142" width="335" height="40"/>
@@ -57,6 +57,9 @@
                                         <state key="normal" title="Forgot Password ?">
                                             <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="forgotClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pJ4-mG-oOw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24d-gx-Xfy" customClass="RoundedButton" customModule="LoginRegisterApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="194" width="335" height="40"/>
@@ -68,6 +71,9 @@
                                         <state key="normal" title="Log In">
                                             <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Egv-4f-Cw5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9x-Ev-L9o" customClass="RoundedButton" customModule="LoginRegisterApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="246" width="335" height="40"/>
@@ -93,6 +99,9 @@
                                         <state key="normal" title="Contiue as guest">
                                             <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="guestClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XzC-EW-NfA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -116,6 +125,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Q2X-js-DeE"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="tAA-km-oNh" id="gWt-tf-kXU"/>
+                        <outlet property="emailTxt" destination="igN-m7-KQz" id="WRl-n3-QUY"/>
+                        <outlet property="passTxt" destination="GYJ-d6-6Sk" id="0c8-OT-IVC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
