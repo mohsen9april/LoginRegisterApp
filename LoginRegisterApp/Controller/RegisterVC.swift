@@ -19,24 +19,20 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var passCheckImage: UIImageView!
     @IBOutlet weak var confirmCheckImage: UIImageView!
     
-    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIndicator.isHidden = true
         passwordTxt.addTarget(self, action: #selector(textFiledDidchange(_:)), for: UIControl.Event.editingChanged)
         confirmPassTxt.addTarget(self, action: #selector(textFiledDidchange(_:)), for: UIControl.Event.editingChanged)
-        
-
     }
     
     
     @objc func textFiledDidchange( _ textField: UITextField) {
         
-        
         guard let passText = passwordTxt.text else { return }
 
-        
         // if we have started typing confirm passwrod text field
         if textField == confirmPassTxt {
             passCheckImage.isHidden = false
@@ -60,17 +56,14 @@ class RegisterVC: UIViewController {
         }
     }
     
-    
-    
-    
     @IBAction func registerClicked(_ sender: Any) {
         
         guard let email = emailTxt.text , !email.isEmpty,
-            let username = usernameTxt.text , !username.isEmpty,
-            let password = passwordTxt.text , !password.isEmpty else { return }
+        let username = usernameTxt.text , !username.isEmpty,
+        let password = passwordTxt.text , !password.isEmpty else { return }
         
+        activityIndicator.isHidden = false
         activityIndicator.startAnimating()
-        
         
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             

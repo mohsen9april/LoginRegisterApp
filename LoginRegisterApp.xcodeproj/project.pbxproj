@@ -15,6 +15,7 @@
 		EDB076B82296F9D10001668F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB076B62296F9D10001668F /* LaunchScreen.storyboard */; };
 		EDB076C222970A360001668F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDB076C122970A360001668F /* GoogleService-Info.plist */; };
 		EDB076C72297502A0001668F /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB076C62297502A0001668F /* RegisterVC.swift */; };
+		EDB076CB2297D78C0001668F /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB076CA2297D78C0001668F /* RoundedViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EDB076B92296F9D10001668F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDB076C122970A360001668F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EDB076C62297502A0001668F /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		EDB076CA2297D78C0001668F /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		EDB076AC2296F9CF0001668F /* LoginRegisterApp */ = {
 			isa = PBXGroup;
 			children = (
+				EDB076C82297D7520001668F /* Shared */,
 				EDB076C522974F890001668F /* Model */,
 				EDB076C322974F760001668F /* View */,
 				EDB076C422974F7F0001668F /* Controller */,
@@ -108,6 +111,22 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EDB076C82297D7520001668F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EDB076C92297D75E0001668F /* View */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EDB076C92297D75E0001668F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDB076CA2297D78C0001668F /* RoundedViews.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EE211111B3A048FF98EA7D51 /* Frameworks */ = {
@@ -263,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB076CB2297D78C0001668F /* RoundedViews.swift in Sources */,
 				EDB076C72297502A0001668F /* RegisterVC.swift in Sources */,
 				EDB076B02296F9CF0001668F /* LoginVC.swift in Sources */,
 				EDB076AE2296F9CF0001668F /* AppDelegate.swift in Sources */,
