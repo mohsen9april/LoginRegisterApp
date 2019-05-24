@@ -192,39 +192,49 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="Yg1-wV-Qt3">
-                                <rect key="frame" x="316" y="252" width="30" height="30"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="Yg1-wV-Qt3">
+                                <rect key="frame" x="319" y="251.33333333333337" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="O2K-9s-xXb"/>
+                                    <constraint firstAttribute="height" constant="30" id="UtB-TS-83U"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="XYJ-Es-SNc">
-                                <rect key="frame" x="317" y="303" width="30" height="30"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="XYJ-Es-SNc">
+                                <rect key="frame" x="319" y="303.33333333333331" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="7QJ-u1-mH9"/>
+                                    <constraint firstAttribute="height" constant="30" id="O0n-cc-Y2q"/>
+                                </constraints>
                             </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="uWg-qh-eGK">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="uWg-qh-eGK">
                                 <rect key="frame" x="169" y="410.33333333333331" width="37" height="37"/>
                                 <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Yg1-wV-Qt3" firstAttribute="trailing" secondItem="HQ6-oZ-4rg" secondAttribute="trailing" id="0gr-Jg-rDR"/>
                             <constraint firstAttribute="bottom" secondItem="Xnj-eq-5Lt" secondAttribute="bottom" id="30H-bQ-slg"/>
                             <constraint firstItem="Xnj-eq-5Lt" firstAttribute="top" secondItem="fZW-dL-UC7" secondAttribute="top" id="6PL-p0-ARy"/>
-                            <constraint firstItem="XYJ-Es-SNc" firstAttribute="trailing" secondItem="T13-9c-Yg1" secondAttribute="trailing" id="7mk-E6-lKc"/>
+                            <constraint firstItem="Yg1-wV-Qt3" firstAttribute="centerY" secondItem="HQ6-oZ-4rg" secondAttribute="centerY" id="Id4-7X-hvy"/>
+                            <constraint firstItem="XYJ-Es-SNc" firstAttribute="trailing" secondItem="T13-9c-Yg1" secondAttribute="trailing" constant="-6" id="KXq-ew-6Fo"/>
                             <constraint firstItem="Xnj-eq-5Lt" firstAttribute="trailing" secondItem="fZW-dL-UC7" secondAttribute="trailing" id="Nyb-MA-YUT"/>
                             <constraint firstItem="uWg-qh-eGK" firstAttribute="centerX" secondItem="JhB-Yb-bzi" secondAttribute="centerX" id="PQy-SK-Td1"/>
                             <constraint firstItem="uWg-qh-eGK" firstAttribute="top" secondItem="Tuw-qa-Qym" secondAttribute="bottom" constant="20" id="RRT-Rd-y3r"/>
                             <constraint firstItem="Tuw-qa-Qym" firstAttribute="top" secondItem="fZW-dL-UC7" secondAttribute="top" constant="20" id="SH9-NZ-fkG"/>
-                            <constraint firstItem="XYJ-Es-SNc" firstAttribute="centerY" secondItem="T13-9c-Yg1" secondAttribute="centerY" id="YTa-bc-J48"/>
                             <constraint firstItem="Xnj-eq-5Lt" firstAttribute="leading" secondItem="fZW-dL-UC7" secondAttribute="leading" id="aak-rk-XGR"/>
-                            <constraint firstItem="Yg1-wV-Qt3" firstAttribute="centerY" secondItem="HQ6-oZ-4rg" secondAttribute="centerY" id="b2x-hB-SM3"/>
+                            <constraint firstItem="XYJ-Es-SNc" firstAttribute="centerY" secondItem="T13-9c-Yg1" secondAttribute="centerY" id="lqV-pp-8aU"/>
                             <constraint firstItem="fZW-dL-UC7" firstAttribute="trailing" secondItem="Tuw-qa-Qym" secondAttribute="trailing" constant="20" id="mN3-LV-kZq"/>
                             <constraint firstItem="Tuw-qa-Qym" firstAttribute="leading" secondItem="fZW-dL-UC7" secondAttribute="leading" constant="20" id="sZZ-qG-Wx1"/>
+                            <constraint firstItem="Yg1-wV-Qt3" firstAttribute="trailing" secondItem="HQ6-oZ-4rg" secondAttribute="trailing" constant="-6" id="yZc-I7-pzW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fZW-dL-UC7"/>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="uWg-qh-eGK" id="E2K-8X-DYd"/>
+                        <outlet property="confirmCheckImage" destination="XYJ-Es-SNc" id="qk1-J8-KBP"/>
                         <outlet property="confirmPassTxt" destination="T13-9c-Yg1" id="vvq-oc-loj"/>
                         <outlet property="emailTxt" destination="DZF-Mf-xww" id="xuo-eQ-YCn"/>
+                        <outlet property="passCheckImage" destination="Yg1-wV-Qt3" id="orc-FY-LTQ"/>
                         <outlet property="passwordTxt" destination="HQ6-oZ-4rg" id="6dN-Xb-a44"/>
                         <outlet property="usernameTxt" destination="NA6-Wy-HpG" id="WDR-Xh-qwY"/>
                     </connections>
